@@ -1,0 +1,12 @@
+<h1>Latest Posts...</h1>
+<ul>
+  <!--<li *ngFor="let ab of [].constructor(20)"><app-post></app-post></li>-->
+  <li *ngFor="let ab of listOfPosts; let i = index">
+    <app-post [post]="ab" [id]="i"></app-post>
+  </li>
+  <!-- <li><app-post [post]="listOfPosts[0]"></app-post></li>
+    <li><app-post [post]="listOfPosts[1]"></app-post></li>
+    <li><app-post [post]="listOfPosts[2]"></app-post></li>
+    <li><app-post [post]="listOfPosts[3]"></app-post></li>
+    <li><app-post [post]="listOfPosts[4]"></app-post></li> -->
+</ul>

@@ -1,0 +1,13 @@
+<br />
+<h2>{{post?.title}}</h2>
+<p>{{post?.description}}
+</p>
+<img
+  src={{post?.imgPath}}
+  alt="Sample Image"
+  class="img-responsive"
+/>
+<p>Author: {{post?.author}}</p>
+<p>Date: {{post?.datetimeCreated}}</p>
+<p><button>Edit</button> | <button (click)="deletePosts()">Delete</button></p>
+<br />
