@@ -2,7 +2,7 @@
 <ul>
   <!--<li *ngFor="let ab of [].constructor(20)"><app-post></app-post></li>-->
   <li *ngFor="let ab of listOfPosts; let i = index">
-    <app-post [post]="ab" [id]="i"></app-post>
+    <app-post [post]="ab" [index]="i"></app-post>
   </li>
   <!-- <li><app-post [post]="listOfPosts[0]"></app-post></li>
     <li><app-post [post]="listOfPosts[1]"></app-post></li>
